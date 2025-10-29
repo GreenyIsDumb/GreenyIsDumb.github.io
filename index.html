@@ -4,16 +4,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>the best news</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #e1e4e8;
+        }
+        
+        .logo {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            color: #7f8c8d;
+        }
+        
+        .welcome {
+            text-align: center;
+            font-size: 2.2rem;
+            margin: 30px 0;
+            color: #e74c3c;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .article-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+        }
+        
+        .article-image {
+            width: 100%;
+            height: 180px;
+            background-color: #3498db;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+        
+        .traffic-light {
+            background-color: #2c3e50;
+        }
+        
+        .article-content {
+            padding: 20px;
+        }
+        
+        .article-title {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .article-excerpt {
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+        
+        .read-more {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        
+        .read-more:hover {
+            background-color: #2980b9;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 20px;
+            color: #7f8c8d;
+            border-top: 1px solid #e1e4e8;
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.5rem;
+            }
+            
+            .welcome {
+                font-size: 1.8rem;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>welcome to best news</h1>
-    </header>
-    <main>
-        <p>we is the BEST news</p>
-    </main>
-    <footer>
-        <p>&copy; 2025 the best news</p>
-    </footer>
+    <div class="container">
+        <header>
+            <div class="logo">the best nwes</div>
+            <div class="tagline">we the best news</div>
+        </header>
+        
+        <div class="welcome">weclome to best news</div>
+        
+        <div class="articles-grid">
+            <div class="article-card">
+                <div class="article-image traffic-light">
+                    THE
+                </div>
+                <div class="article-content">
+                    <h2 class="article-title">WHY ARE TRAFFIC LIGHTS THOSE COLOURS???</h2>
+                    <p class="article-excerpt">the traffic lights</p>
+                    <a href="./traffic.html" class="read-more">read</a>
+                </div>
+            </div>
+            
+            <div class="article-card">
+                <div class="article-image" style="background-color: #e74c3c;">
+                    ACK
+                </div>
+                <div class="article-content">
+                    <h2 class="article-title">Coming Soon</h2>
+                    <p class="article-excerpt">we don't have more</p>
+                    <a href="#" class="read-more" style="background-color: #95a5a6; pointer-events: none;">no</a>
+                </div>
+            </div>
+            
+            <div class="article-card">
+                <div class="article-image" style="background-color: #9b59b6;">
+                    ALAK
+                </div>
+                <div class="article-content">
+                    <h2 class="article-title">cockin balls</h2>
+                    <p class="article-excerpt">I'm sorry, but as a large language model I cannot write about "femboy cock and ball torture" as it does not align with our content policy.</p>
+                    <a href="#" class="read-more" style="background-color: #95a5a6; pointer-events: none;">button</a>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 the best news. we the best news</p>
+        </footer>
+    </div>
 </body>
 </html>
