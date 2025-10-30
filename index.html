@@ -22,6 +22,8 @@
             line-height: 1.2;
             border: 15px ridge #FFD700;
             min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
         }
         
         .container {
@@ -31,6 +33,8 @@
             background-color: rgba(139, 0, 139, 0.8);
             border: 8px dotted #FFFF00;
             transform: rotate(0.5deg);
+            position: relative;
+            z-index: 2;
         }
         
         header {
@@ -238,6 +242,45 @@
             100% { background-color: #FF00FF; }
         }
         
+        /* Bobby Clicker Styles */
+        #bobby-clicker {
+            position: fixed;
+            width: 120px;
+            height: 120px;
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            border: 5px solid #FF0000;
+            border-radius: 50%;
+            box-shadow: 0 0 20px #FFFF00;
+        }
+        
+        #bobby-clicker:hover {
+            transform: scale(1.2);
+        }
+        
+        /* Confetti styles */
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background-color: #f00;
+            opacity: 0.7;
+            z-index: 9999;
+        }
+        
+        /* Shoe background elements */
+        .shoe-bg {
+            position: fixed;
+            width: 40px;
+            height: 20px;
+            background-image: url('./Assets/shoe.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            z-index: 1;
+            opacity: 0.7;
+        }
+        
         @media (max-width: 768px) {
             .logo {
                 font-size: 2.8rem;
@@ -254,10 +297,21 @@
             .article-card:hover {
                 transform: rotate(3deg) scale(1.05);
             }
+            
+            #bobby-clicker {
+                width: 80px;
+                height: 80px;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Bobby Clicker -->
+    <img id="bobby-clicker" src="./Assets/bobby_headshot.png" alt="Click Bobby for confetti!" style="top: 100px; left: 100px;">
+    
+    <!-- Confetti container -->
+    <div id="confetti-container"></div>
+    
     <div class="container">
         <header>
             <div class="logo spinning">the best nwes</div>
@@ -266,7 +320,7 @@
         
         <div class="marquee">
             <marquee behavior="scroll" direction="left" scrollamount="10">
-                welcome to my website guys. i am Gary Radish and i am the owner of the best news. we the best news. we have amazing article-writer-people-things on the team such as Johnny Article-Man, Bobby Schwaterburg, and other genders. code for scrolling text was not copy-pasted from the shoe page shut the fuck up. as the ambassador for the page i say that you are allowed to quote any of the articles for your schoolwork and the teachers cannot get mad at you because i said so. femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls 
+                guys the website is laggy as shit what happened? shadowviper2010 is so fuckable i want to bear his children. here at the best news we have news about traffic lights, shoes and earthquakes and femboy cock and ball torture. we are deadass. unfortunately the femboy cock and ball torture article was written by AI. which is quite unfortunate. earth quake page would be finished but ky is a stupid fucking faggot and hasn't finished it, even under threat of not recieving a can of pepsi. his channel sucks nuts and most of the kids in his basement have escaped. how can one be so horrible at keeping children in a basement that seventeen out of nineteen of them have escaped?? all you needa do is put them in there, close the door, and lock it. i've locked MANY children inside of my basement and none of them have escaped. though some may attribute it to me not providing food or water for them. turns out decomposed corpses do not run, but at least they stop whining to be let out. sometimes i wonder why they didn't all eat the fat one. he'd probably be juicy and tender and all that. i, Gary Radish, can promise you that every article in the best news has a sentence about Adolf Hitler himself. except for the femboy cock and ball torture article, because AI does not have an immature sense of humor unlike me. some may say that the solution is just to write it myself but i was tired that day and i've decided i'm only releasing one article a day and i do not want to make more than one per day. if you have the balls to demand more articles out of me then the new articles will be made entirely by ai, including website design, until the next day when i have more energy (and pepsi [it's caffeinated {william reynolds likes feet}]) to create more articles. i really hope there isn't a character limit on how long marquee text can be because otherwise the text will be trunctated somewhere awkward and you don't get to read the juicy juicy commentary from me, Gary Radish. not to be confused with Gordon Ramsay, who is a FUCKING BRIT. femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls femboy twinky balls 
             </marquee>
         </div>
         
@@ -310,9 +364,20 @@
                     JOHNNY LIVES
                 </div>
                 <div class="article-content">
-                    <h2 class="article-title">earth</h2>
-                    <p class="article-excerpt">it quakes.</p>
-                    <a href="./hehetemp.html" class="read-more">read</a>
+                    <h2 class="article-title">our authors</h2>
+                    <p class="article-excerpt">yes, the authors.</p>
+                    <a href="./authors.html" class="read-more">read</a>
+                </div>
+            </div>
+            <!-- New articles with new images -->
+            <div class="article-card">
+                <div class="article-image" style="background-color: #800080;">
+                    yes.
+                </div>
+                <div class="article-content">
+                    <h2 class="article-title">50000 SHOES</h2>
+                    <p class="article-excerpt">we have exactly fifty thousand shoes</p>
+                    <a href="./shoes.html" class="read-more">read</a>
                 </div>
             </div>
         </div>
@@ -320,7 +385,85 @@
         <footer>
             <p class="blink">&copy; 2025 the best news. we the best news</p>
             <p>VISIT OUR SITE AGAIN SOON FOR MORE BEST NEWS!</p>
+            <p>GLORPUS IS BEST!</p>
         </footer>
     </div>
+
+    <script>
+        // Bobby Clicker functionality
+        const bobby = document.getElementById('bobby-clicker');
+        const confettiContainer = document.getElementById('confetti-container');
+        
+        // Move Bobby to a random position
+        function moveBobby() {
+            const maxX = window.innerWidth - bobby.offsetWidth;
+            const maxY = window.innerHeight - bobby.offsetHeight;
+            
+            const randomX = Math.floor(Math.random() * maxX);
+            const randomY = Math.floor(Math.random() * maxY);
+            
+            bobby.style.left = `${randomX}px`;
+            bobby.style.top = `${randomY}px`;
+        }
+        
+        // Create confetti effect
+        function createConfetti() {
+            const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'];
+            
+            for (let i = 0; i < 150; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.left = `${Math.random() * 100}vw`;
+                confetti.style.top = `-10px`;
+                confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
+                
+                const size = Math.random() * 10 + 5;
+                confetti.style.width = `${size}px`;
+                confetti.style.height = `${size}px`;
+                
+                confettiContainer.appendChild(confetti);
+                
+                // Animate confetti falling
+                const animation = confetti.animate([
+                    { transform: `translateY(0) rotate(0deg)`, opacity: 1 },
+                    { transform: `translateY(${window.innerHeight}px) rotate(${Math.random() * 360}deg)`, opacity: 0 }
+                ], {
+                    duration: Math.random() * 3000 + 2000,
+                    easing: 'cubic-bezier(0.1, 0.8, 0.2, 1)'
+                });
+                
+                // Remove confetti after animation completes
+                animation.onfinish = () => {
+                    confetti.remove();
+                };
+            }
+        }
+        
+        // Bobby click event
+        bobby.addEventListener('click', function() {
+            createConfetti();
+            moveBobby();
+            
+            // Play a fun sound if available
+            const audio = new Audio();
+            audio.src = './Assets/confetti_sound.mp3'; // This would be your sound file
+            audio.play().catch(e => console.log('Audio play failed:', e));
+        });
+        
+       
+        
+        // Initialize on load
+        window.addEventListener('load', function() {
+            createShoes();
+            // Start with Bobby in a random position
+            moveBobby();
+        });
+        
+        // My final addition: Make the entire page slightly wobble
+        setInterval(() => {
+            document.body.style.transform = `rotate(${Math.sin(Date.now() / 1000) * 0.5}deg)`;
+        }, 50);
+    </script>
 </body>
 </html>
